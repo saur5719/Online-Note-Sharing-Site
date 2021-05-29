@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="NotesSharingSite.admin.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Notes Sharing Site</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark pl-5" style="background-color:#000000">
+        <a href="" class="navbar-brand"><h2>Notes Sharing Site</h2></a>
+        <!-- Toggler/collapsibe Button -->
+        <span class="navbar-text" style="color:white">Spread  Education</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#abc">
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="abc">
+            <ul class="navbar-nav pl-5">
+            <li class="nav-item">
+            <a class="nav-link" href="adminhome.aspx" style="color:white">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="viewnotes.aspx" style="color:white">View Notes</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="viewuser.aspx" style="color:white">View User</a>
+             </li>
+            <li class="nav-item">
+            <a class="nav-link" href="changepassword.aspx" style="color:white">Change Password</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="logout.aspx" style="color:white">LogOut</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
